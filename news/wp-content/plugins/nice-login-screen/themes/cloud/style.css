@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #D3D6D9 url( img/bg-body.png ) repeat;
+	color: #626262;
+	font-family: 'Helvetica Neue', Helvetica, Arial Geneva, sans-serif;
+	font-size: 12px;
+}
+
+body a, body a:visited {
+	outline: none;
+	text-decoration: none;
+	font-weight: bold;
+	color: #636C75;
+}
+
+body a:hover, body a:active {
+	color: #636C75;
+}
+
+body ul {
+	list-style-type: none;
+}
+
+div.clear {
+	clear: both;
+}
+
+#login {
+	margin: 50px auto;
+	width: 456px;
+}
+
+#login h1 {
+	text-align: center;
+	font-size: 18px;
+	line-height: 22px;
+	color: #636C75;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#login form {	
+	margin: 15px 0 0;
+	padding: 24px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#login form p {
+	margin: 0 0 12px;
+}
+
+#login form p label {
+	font-weight: bold;
+}
+
+#login form p input[type="text"],
+#login form p input[type="password"] {
+	width: 394px;
+	-moz-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	-webkit-transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	border: 1px solid #CCCCCC;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) inset;
+	color: #424242;
+	font-family: Verdana,'Helvetica Neue',Helvetica,Arial,Geneva,sans-serif;
+	font-size: 13px;
+	outline: medium none;
+	padding: 6px;
+}
+
+#login form p input[type="text"]:focus, 
+#login form p input[type="password"]:focus {
+    border: 1px solid #80BFFF;
+    box-shadow: 0 0 3px #80BFFF, 0 1px 2px rgba(0, 0, 0, 0.15) inset;
+}
+
+#login form p input[type="submit"] {
+    background-color: #D8D8D8;
+	background: -moz-linear-gradient(center top , #EFEFEF, #D8D8D8) repeat scroll 0 0 #D8D8D8;
+	background: -webkit-gradient(linear, center top, center bottom, from(#EFEFEF), to(#D8D8D8)) #D8D8D8;
+	background: linear-gradient(top, #EFEFEF, #D8D8D8) #D8D8D8;
+	border: 1px solid #ABABAB;
+	border-radius: 3px 3px 3px 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(255, 255, 255, 0.8) inset;
+	color: #707070;
+	font-family: 'Helvetica Neue',Helvetica,Arial,Geneva,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+	outline: medium none;
+	padding: 5px 10px;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+	cursor: pointer;
+}
+
+#login form p input[type="submit"]:hover {
+	background: #f6f6f6;
+	background: -moz-linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e3e3e3)) #e3e3e3;
+	background: linear-gradient(top, #f6f6f6, #e3e3e3) #e3e3e3;
+}
+
+#login #nav {
+	float: right;
+	width: auto;
+	padding: 15px 0;
+}
+
+#login #backtoblog {
+	float: left;
+	width: auto;
+	padding: 15px 0;
+}
+
+#login #login_error {
+	background-color: #FFE3E2;
+	border: 1px solid #EFB1AF;
+	color: #CC0000;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+#login #login_error a {
+	color: #1661a6;
+	padding-right: 4px;
+}
+
+#login .message {
+	background-color: #f9f0cb;
+	border: 1px solid #e3e494;
+	color: #3b3b3b;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+#custom-copyright-message {
+	border-top: 1px dotted #666;
+	padding-top: 5px;
+	margin: 5px auto;
+	width: 456px;
+}
+
+#custom-copyright-message p {
+	text-align: center;
+	font-size: 11px;
+}

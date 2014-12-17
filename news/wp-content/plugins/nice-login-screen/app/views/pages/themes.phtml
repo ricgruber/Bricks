@@ -1,0 +1,29 @@
+<ul id="themes-list">
+	<li class="<?php print !$this->settings->get( 'theme_name' ) ? 'current-theme' : ''; ?>">
+		<span><!-- --></span>
+		<a href="#"><img src="<?php print NinjaApp::getInstance()->appurl(); ?>/themes/default/preview.png" alt="" /></a>
+		<input type="radio" name="<?php $this->settings->field( 'theme_name' ); ?>" value="" <?php checked( $this->settings->get( 'theme_name' ), '' ); ?> >
+	</li>
+
+
+	<?php foreach( $this->themes as $theme ): ?>
+
+	<li class="<?php print $this->settings->get( 'theme_name' ) == $theme ? 'current-theme' : ''; ?>">
+		<span><!-- --></span>
+		<a href="#"><img src="<?php print NinjaApp::getInstance()->appurl(); ?>/themes/<?php print $theme; ?>/preview.png" alt="" /></a>
+		<input type="radio" name="<?php $this->settings->field( 'theme_name' ); ?>" value="<?php print $theme; ?>" <?php checked( $this->settings->get( 'theme_name' ), $theme ); ?> >
+	</li>
+	
+	<?php endforeach; ?>
+
+</ul>
+
+<div class="clear"><!-- --></div>
+
+<dl>
+	<dd>
+		<div class="submit-button">
+			<input type="submit" name="submit-form" value="save options" />
+		</div>
+	</dd>
+</dl>

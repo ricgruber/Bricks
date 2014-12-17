@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #999;
+	cursor: default;
+	font: normal 14px/15px Arial, Tahoma, Verdana, Sans-Serif;
+}
+
+body a {
+	outline: none;
+	text-decoration: none;
+}
+
+body a:hover {
+}
+
+body ul {
+	list-style: none;
+}
+
+body a img {
+	border: 0;
+}
+
+body .clear {
+	clear: both;
+}
+
+body .hidden {
+	display: none;
+}

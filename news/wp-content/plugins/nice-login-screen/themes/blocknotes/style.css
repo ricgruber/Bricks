@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #D3D6D9 url( img/bg-body.png ) repeat;
+	color: #626262;
+	font-family: 'Helvetica Neue', Helvetica, Arial Geneva, sans-serif;
+	font-size: 12px;
+}
+
+body a, body a:visited {
+	outline: none;
+	text-decoration: none;
+	font-weight: bold;
+	color: #636C75;
+}
+
+body a:hover, body a:active {
+	color: #636C75;
+}
+
+body ul {
+	list-style-type: none;
+}
+
+div.clear {
+	clear: both;
+}
+
+#login {
+	position: relative;
+	z-index: 10;
+	color: #635843;
+	padding: 15px 20px 15px 40px;
+	margin: 100px auto 0;
+	width: 364px;
+	background: url( img/bg-login.png ) repeat-y;
+}
+
+#login #nav {
+	position: absolute;
+	z-index: 10;
+	bottom: -34px;
+	left: 40px;
+}
+
+#login #backtoblog {
+	position: absolute;
+	z-index: 10;
+	bottom: -51px;
+	left: 27px;
+}
+
+#login #nav a,
+#login #backtoblog a {
+	color: #635843;
+	font-size: 11px;
+	text-shadow: 0 1px 0 #fff;
+}
+
+#login #nav a:hover,
+#login #backtoblog a:hover {
+	color: #c3bd9a;
+}
+
+#login p.message {
+	margin: 10px 0;
+	background: url( img/bg-alpha.png ) repeat;
+	padding: 6px 10px;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+	border: 1px solid #e2dcbe;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#login h1 {
+	padding: 15px 0;
+}
+
+#login form {
+	padding: 10px 0;
+}
+
+#login form p {
+	padding: 6px 0;
+}
+
+#login form p label {
+	color: #6e624b;
+	font-weight: bold;
+}
+
+#login form p.forgetmenot label {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 11px;
+}
+
+#login form p input {
+	margin-top: 6px;
+}
+
+#login-close {
+	margin: 0 auto;
+	width: 424px;
+	height: 65px;
+	background: url( img/bg-login-close.png ) no-repeat;
+}
+
+#custom-copyright-message {
+	margin: 5px auto;
+	text-align: center;
+	width: 424px;
+}

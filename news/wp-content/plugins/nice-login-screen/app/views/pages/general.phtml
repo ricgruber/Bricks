@@ -1,0 +1,116 @@
+		<dl>
+
+			<dd>
+				<label for="show-custom-logo">
+					<?php _e( 'Show custom logo ?', 'nice-login-screen' ); ?>
+				</label>
+				
+				<input type="checkbox" id="show-custom-logo" name="<?php $this->settings->field( 'custom_logo_status' ); ?>" class="ninja-checkbox" data-on="Yes" data-off="No" <?php checked( $this->settings->get( 'custom_logo_status' ), 'on' ); ?> />
+			</dd>
+
+			<dd class="half left upload-button">
+				<label for="custom-logo">
+					<?php _e( 'Custom logo', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Enter the full address here if you want to change the default wordpress logo.', 'nls' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'custom_logo_url' ); ?>" value="<?php print $this->settings->get( 'custom_logo_url' ); ?>" id="custom-logo" />
+				
+				<a id="upload-logo-button" href="#"><?php _e( 'Upload', 'nice-login-screen' ); ?></a>
+			</dd>
+
+			<dd class="half right">
+				<label for="custom-logo-link">
+					<?php _e( 'Custom logo link', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Enter the full address here if you want to change the default logo link. (use http://)', 'nice-login-screen' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'custom_logo_link' ); ?>" value="<?php print $this->settings->get( 'custom_logo_link' ); ?>" id="custom-logo-link" />
+			</dd>
+
+			<dd class="half left">
+				<label for="logo-width">
+					<?php _e( 'Logo Width', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Insert a custom width in pixels for the logo.', 'nice-login-screen' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'custom_logo_width' ); ?>" value="<?php print $this->settings->get( 'custom_logo_width' ); ?>" id="logo-width" class="ninja-numbers" />
+			</dd>
+			
+			<dd class="half right">
+				<label for="logo-height">
+					<?php _e( 'Logo Height', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Insert a custom height in pixels for the logo.', 'nice-login-screen' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'custom_logo_height' ); ?>" value="<?php print $this->settings->get( 'custom_logo_height' ); ?>" id="logo-height" class="ninja-numbers" />
+			</dd>
+
+			<dd class="section-separator clear"><!-- --></dd>
+
+			<?php /*
+			<dd>
+				<label for="">
+					<?php _e( 'Show Terms of Service ?', 'nice-login-screen' ); ?>
+				</label>
+				
+				<input type="checkbox" name="<?php $this->settings->field( 'term_of_service_status' ); ?>" class="ninja-checkbox" data-on="Yes" data-off="No" <?php checked( $this->settings->get( 'term_of_service_status' ), 'on' ); ?> />
+			</dd>
+			
+			<dd>
+				<label for="terms-service-link">
+					<?php _e( 'Terms of Service link', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Insert a custom height in pixels for the logo.', 'nice-login-screen' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'term_of_service_link' ); ?>" value="<?php print $this->settings->get( 'term_of_service_link' ); ?>" id="terms-service-link" />
+			</dd>
+
+			<dd class="section-separator clear"><!-- --></dd>
+			*/ ?>
+			
+			<dd>
+				<label for="">
+					<?php _e( 'Show custom copyright ?', 'nice-login-screen' ); ?>
+				</label>
+				
+				<input type="checkbox" id="custom-copyright-show" name="<?php $this->settings->field( 'custom_copyright_status' ); ?>" class="ninja-checkbox" data-on="Yes" data-off="No" <?php checked( $this->settings->get( 'custom_copyright_status' ), 'on' ); ?> />
+			</dd>
+			
+			<dd>
+				<label for="custom-copyright">
+					<?php _e( 'Custom copyright', 'nice-login-screen' ); ?>
+					<span><?php _e( 'Insert a custom copyright message.', 'nice-login-screen' ); ?></span>
+				</label>
+				
+				<input type="text" name="<?php $this->settings->field( 'custom_copyright_text' ); ?>" value="<?php print $this->settings->get( 'custom_copyright_text' ); ?>" id="custom-copyright" />
+			</dd>
+			
+			<dd class="section-separator clear"><!-- --></dd>
+			
+			<dd>
+				<label for="">
+					<?php _e( 'Enable "shaker" effect on login error ?', 'nice-login-screen' ); ?>
+				</label>
+				
+				<input type="checkbox" id="shaker-effect" name="<?php $this->settings->field( 'shaker_effect_status' ); ?>" class="ninja-checkbox" data-on="Yes" data-off="No" <?php checked( $this->settings->get( 'shaker_effect_status' ), 'on' ); ?> />
+			</dd>
+
+
+			<dd>
+				<label for="back-to-blog">
+					<?php _e( 'Show "back to blog" link ?', 'nice-login-screen' ); ?>
+				</label>
+				
+				<input type="checkbox" id="back-to-blog" name="<?php $this->settings->field( 'back_to_blog_status' ); ?>" class="ninja-checkbox" data-on="Yes" data-off="No" <?php checked( $this->settings->get( 'back_to_blog_status' ), 'on' ) ?> />
+			</dd>
+			
+			<dd class="section-separator clear"><!-- --></dd>
+			
+			<dd>
+				<div class="submit-button">
+					<input type="submit" name="submit-form" value="save options" />
+				</div>
+			</dd>
+			
+		</dl>

@@ -1,0 +1,258 @@
+#ninja-page * {
+	margin: 0;
+	padding: 0;
+}
+
+#ninja-page .clear {
+	clear: both;
+}
+
+#ninja-page .hidden {
+	display: none;
+}
+
+
+#ninja-page {
+	min-width: 720px;
+	margin: 40px 20px 20px 2px;
+	border: 1px solid #dadada;
+	background-color: #f9f9f9;
+}
+
+#ninja-page .menu {
+	height: 38px;
+	background: url( images/bg-menu.png ) repeat-x;
+}
+
+#ninja-page .menu li {
+	float: left;
+	width: 190px;
+	height: 37px;
+	line-height: 37px;
+	text-align: center;
+	font-size: 15px;
+	text-shadow: 0 1px 0 #fff;
+	border-right: 1px solid #dadada;
+	border-bottom: 1px solid #dadada;
+}
+
+#ninja-page .menu li a {
+	text-decoration: none;
+	color: #333333;
+}
+
+#ninja-page .menu li.current-page {
+	background-color: #f9f9f9;
+	border-right: 1px solid #dadada!important;
+	border-bottom: 1px solid #f9f9f9;
+}
+
+#ninja-page .menu li.current-page a {
+	color: #3399cc;
+}
+
+#ninja-page .menu li:last-child {
+	border-right: 0;
+}
+
+#ninja-page dl {
+	width: 700px;
+	padding: 10px;
+}
+
+#ninja-page dl dd {
+	margin: 10px 0 20px;
+}
+
+#ninja-page dl dd.upload-button {
+	position: relative;
+	z-index: 10;
+}
+
+#ninja-page dl dd.upload-button input[type=text] {
+	width: 240px!important;
+	font-size: 11px;
+}
+
+#ninja-page dl dd.upload-button #upload-logo-button {
+	position: absolute;
+	z-index: 10;
+	top: 53px;
+	right: -2px;
+	width: 89px;
+	height: 31px;
+	line-height: 31px;
+	background: url( images/bg-button-upload.png ) no-repeat;
+	font-weight: bold;
+	text-align: center;
+	color: #996633;
+	text-decoration: none;
+	padding-left: 13px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+#ninja-page dl dd.upload-button #upload-logo-button:hover {
+	background-position: 0 -31px;
+}
+
+#ninja-page dl dd.half {
+	width: 335px;
+}
+
+#ninja-page dl dd.left {
+	float: left;
+	margin-right: 15px;
+}
+
+#ninja-page dl dd.right {
+	float: right;
+	margin-left: 15px;
+}
+
+#ninja-page dl dd.section-separator {
+	border-bottom: 2px dashed #ccc;
+	margin-bottom: 35px;
+}
+
+#ninja-page dl dd .submit-button {
+	width: 152px;
+	height: 37px;
+	background: url( images/bg-button.png ) no-repeat;
+}
+
+#ninja-page dl dd .submit-button input {
+	width: 152px;
+	height: 35px;
+	text-align: center;
+	background: transparent;
+	border: 0;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	color: #437182;
+	text-shadow: 0 1px 0 #fff;
+}
+
+#ninja-page dl dd .submit-button:hover {
+	background-position: -152px 0;
+}
+
+#ninja-page dl dd label {
+	display: block;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000;
+}
+
+#ninja-page dl dd label span {
+	float: right;
+	width: auto;
+	font-weight: normal;
+	font-size: 11px;
+	font-style: italic;
+	color: #777;
+	margin-bottom: 5px;
+}
+
+#ninja-page form input[type=text] {
+	width: 698px;
+	background-color: #fff;
+	border: 1px solid #C6C6C6;
+	border-radius: 3px;
+	color: #333333;
+    font: 14px/20px arial;
+    padding: 4px 10px;
+	box-shadow: 0 1px 1px #EEEEEE, 0 1px 0 #FFFFFF inset;
+}
+
+#ninja-page form dl dd.half input[type=text] {
+	width: 335px;
+}
+
+#ninja-page form .ninja-checkbox {
+	cursor: pointer;
+	margin-top: 15px;
+	position: relative;
+	z-index: 1;
+	display: block;
+	width: 80px;
+	height: 25px;
+	background: url( images/bg-ninja-checkbox.png ) no-repeat -43px 0;
+}
+
+#ninja-page form .ninja-checkbox.checked {
+	margin-left: 7px;
+	background-position: -123px 0;
+}
+
+#ninja-page form .ninja-checkbox .label-off {
+	padding-left: 13px;
+	float: left;
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+#ninja-page form .ninja-checkbox .label-on {
+	padding-right: 13px;
+	float: right;
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+}
+
+#ninja-page form .ninja-checkbox .handle {
+	position: absolute;
+	z-index: 10;
+	top: -1px;
+    left: 40px;
+    width: 43px;
+    height: 28px;
+    background: url( images/bg-ninja-checkbox.png ) no-repeat 0 0;
+}
+
+#ninja-page form .ninja-checkbox.checked .handle {
+	left: -7px;
+}
+
+#ninja-page #themes-list {
+	padding-top: 20px;
+}
+
+#ninja-page #themes-list li {
+	position: relative;
+	z-index: 10;
+	float: left;
+	padding: 3px;
+	margin: 7px 15px;
+	width: 200px;
+	height: 130px;
+	background: url( images/bg-theme.png ) no-repeat;
+}
+
+#ninja-page #themes-list li span {
+	display: none;
+	position: absolute;
+	z-index: 20;
+	top: -10px;
+	right: -10px;
+	width: 40px;
+	height: 40px;
+	background: url( images/bg-tick.png ) no-repeat;
+}
+
+#ninja-page #themes-list li.current-theme span {
+	display: block;
+}
+
+#ninja-page #themes-list li input {
+	display: none;
+}
+
+#ninja-page #themes-list li a {
+	display: block;
+	width: 200px;
+	height: 130px;
+}

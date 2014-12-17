@@ -1,0 +1,15 @@
+#login {
+	margin-bottom: 10px;
+}
+
+#custom-copyright-message {
+	border-top: 1px solid #E5E5E5;
+	margin-top: 15px;
+	padding-top: 5px;
+}
+
+#custom-copyright-message p {
+	text-align: center;
+	font-size: 11px;
+	padding: 0 10px;
+}

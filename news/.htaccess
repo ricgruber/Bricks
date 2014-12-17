@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^news\.brickswoodfiredpizza\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.news\.brickswoodfiredpizza\.com$
+RewriteRule ^/?$ "http\:\/\/brickswoodfiredpizza\.com\/news" [R=301,L]
+

@@ -1,0 +1,23 @@
+<div id="ninja-page">
+	
+	<ul class="menu">
+		<?php foreach( $this->pages as $page ): ?>
+		<li class="<?php print $this->currentPage == $page['slug'] ? 'current-page' : ''; ?>">
+			<a href="#<?php print $page['slug']; ?>"><?php print $page['name']; ?></a>
+		</li>
+		<?php endforeach; ?>
+	</ul>
+	
+	<form action="" method="post" id="">
+	
+		<div id="ninjapage-general">
+			<?php include NinjaApp::getInstance()->apppath() . '/views/pages/general.phtml'; ?>
+		</div>
+
+		<div id="ninjapage-themes" class="hidden">
+			<?php include NinjaApp::getInstance()->apppath() . '/views/pages/themes.phtml'; ?>
+		</div>
+	
+	</form>
+	
+</div>
